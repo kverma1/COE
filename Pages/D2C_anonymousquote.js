@@ -78,11 +78,12 @@ for (i = 0; i < numberofrows; i++) {
     I.scrollIntoView(objects.fields.NextBtn)
     I.click(objects.fields.NextBtn)
     I.wait(4)
-    I.click(objects.fields.NeedAssessment)
+   /* I.click(objects.fields.NeedAssessment)
     I.fillField(objects.fields.AnnualIncome,AnnualIncome)
     I.fillField(objects.fields.yearsReplaceIncome,Year)
     I.click(objects.fields.MakeCoverage)
     I.wait(2)
+    */
     I.click(objects.fields.NextBtnCoverage)
     I.wait(5)
     this.Fill_UserDetails()
