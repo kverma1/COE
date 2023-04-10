@@ -19,6 +19,7 @@ let Street
 let City
 let State
 let Zipcode
+let randomnumber = Math.floor((Math.random() * 10) + 1);
 module.exports = {
     
     //Function will be used to check Funding Instruction Screen Validations
@@ -95,7 +96,7 @@ for (i = 0; i < numberofrows; i++) {
     I.see('Congratulations! Here is your quote')
     I.click(objects.fields.SubmitBtn)
     I.wait(3)
-    I.fillField(objects.fields.OwnerPhone,'6788822222')
+    I.fillField(objects.fields.OwnerPhone,'6465553890')
     I.wait(4)
     I.click(objects.fields.SaveBtn)
     I.waitForText("Your quote is now complete!",60)
@@ -108,7 +109,7 @@ for (i = 0; i < numberofrows; i++) {
       I.wait(3)
       I.fillField(objects.fields.DOB,DOB)
       customSteps().selectInDropdown(objects.fields.Gender,Gender)
-      I.fillField(objects.fields.Email,Email)
+      I.fillField(objects.fields.Email,Email+randomnumber+"@unqork.com")
       I.fillField(objects.fields.Street,Street)
       I.fillField(objects.fields.City,City)
       I.fillField(objects.fields.State,State)
