@@ -1,0 +1,31 @@
+module.exports = {
+    fields: {
+    LaunchDashboard: '//*[@id="btnLaunchDashboard"]',
+    selectReqfromMPS: '//*[@id="selectRequestFrom-mps"]',
+    OwnerRelationship: '//*[@id="ownerRelationship"]',
+    NextBtn: '//*[@id="btnNextProtection"]',
+    DesiredCoverage:'//*[@id="coverage"]',
+    NeedAssessment: '//*[@id="contentNeeds"]/div/p/a',
+    AnnualIncome: '//*[@id="annualIncome"]',
+    yearsReplaceIncome: '//*[@id="yearsReplaceIncome"]',
+    MakeCoverage: '//*[@id="btnMakeCoverage"]/span',
+    NextBtnCoverage: '//*[@id="btnNextCoverage"]',
+    NextBtnInfo: '//*[@id="btnNextInfo"]',
+    FirstName: '//*[@id="insFirstName"]',
+    LastName: '//*[@id="insLastName"]',
+    DOB: '//*[@id="insDOB"]',
+    Gender: '//*[@id="insGender"]/div[1]/span/i',
+    Street: '//*[@id="insAddress-street"]',
+    Email: '//*[@id="insEmail"]',
+    City: '//*[@id="insAddress-city"]',
+    Owner_yes: '//*[@id="form-group-ownerSame"]//*[text()= "Yes"]',
+    State: '//*[@id="insAddress-state"]',
+    Zipcode: '//*[@id="insAddress-zip"]',
+    HealthStatus: '//*[@id="healthStatus-Average"]',
+    TobaccoUse: '//*[@id="tobaccoUsed-No"]',
+    SubmitBtn: '//*[@id="btnSubmitQuote"]',
+    OwnerPhone: '//*[@id="ownerPhone"]',
+    SaveBtn: '//*[@id="btnSaveInfo"]',
+    NextBtnHealth: '//*[@id="btnNextHealth"]'
+
+    }}
