@@ -1,0 +1,198 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-04-10T07:24:51.089Z",
+    "end": "2023-04-10T07:28:05.908Z",
+    "duration": 194819,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5af2947b-308a-4fd6-a2ab-a8ed8c8566fd",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "710dc1c3-87c8-431c-8bf6-e4ef88ca2a67",
+          "title": "D2C",
+          "fullFile": "C:\\Users\\kritiverma\\Coe\\tests\\D2C_Quote.js",
+          "file": "\\tests\\D2C_Quote.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"D2C\"",
+              "fullTitle": "D2C \"before all\" hook: codeceptjs.beforeSuite in \"D2C\"",
+              "timedOut": false,
+              "duration": 3,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "386ca94c-1f56-49d6-bb15-a150886be300",
+              "parentUUID": "710dc1c3-87c8-431c-8bf6-e4ef88ca2a67",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"D2C\"",
+              "fullTitle": "D2C \"before each\" hook: codeceptjs.before in \"D2C\"",
+              "timedOut": false,
+              "duration": 1462,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "38c8eaf8-0f75-4f20-8b63-61789090b507",
+              "parentUUID": "710dc1c3-87c8-431c-8bf6-e4ef88ca2a67",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"D2C\"",
+              "fullTitle": "D2C \"after all\" hook: codeceptjs.afterSuite in \"D2C\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "6f340c12-9c54-445e-8903-298c9e91f6f7",
+              "parentUUID": "710dc1c3-87c8-431c-8bf6-e4ef88ca2a67",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"D2C\"",
+              "fullTitle": "D2C \"after each\" hook: finalize codeceptjs in \"D2C\"",
+              "timedOut": false,
+              "duration": 36482,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "557d8494-beef-46c1-92bf-97605f3e8670",
+              "parentUUID": "710dc1c3-87c8-431c-8bf6-e4ef88ca2a67",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "D2C Quote Creation",
+              "fullTitle": "D2C: D2C Quote Creation",
+              "timedOut": false,
+              "duration": 156862,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"D2C_Quote__43223ebf-bb30-4e74-8a4e-ebcfa5ddbc17.failed.png\"",
+              "code": "I }) => {\n    await D2C.ErrorValidation()\n    I.amOnPage(urls.authUser.D2C_UAT)\n    I.wait(5)\n    await D2C.LoadData('D2C.xlsx')\n    await D2C.AnonymousD2CQuote()\n    I.wait(5)",
+              "err": {
+                "message": "Error: element (body) is not in DOM or there is no element(body) with text \"Your quote is now complete!\" after 60 sec",
+                "estack": "Error: element (body) is not in DOM or there is no element(body) with text \"Your quote is now complete!\" after 60 sec\n    at C:\\Users\\kritiverma\\Coe\\node_modules\\webdriverio\\build\\commands\\browser\\waitUntil.js:66:23\n    at async Browser.wrapCommandFn (node_modules\\@wdio\\utils\\build\\shim.js:137:29)",
+                "diff": null
+              },
+              "uuid": "43223ebf-bb30-4e74-8a4e-ebcfa5ddbc17",
+              "parentUUID": "710dc1c3-87c8-431c-8bf6-e4ef88ca2a67",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "43223ebf-bb30-4e74-8a4e-ebcfa5ddbc17"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 156862,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./output/mochawesome/",
+        "mochawesome": {
+          "stdout": "./output/console/console.log",
+          "options": {
+            "reportDir": "./output/mochawesome/",
+            "reportFilename": "report",
+            "quiet": true,
+            "json": false,
+            "html": true,
+            "overwrite": true
+          }
+        },
+        "codeceptjs/lib/cli": {
+          "stdout": "./output/result.xml",
+          "options": {
+            "verbose": true,
+            "steps": true
+          }
+        }
+      },
+      "version": "6.2.0"
+    }
+  }
+}
