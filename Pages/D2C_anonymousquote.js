@@ -105,15 +105,16 @@ for (i = 0; i < numberofrows; i++) {
     async Fill_UserDetails(){
       I.fillField(objects.fields.FirstName,FirstName)  
       I.fillField(objects.fields.LastName,LastName)  
-      I.fillField(objects.fields.DOB,DOB)  
+      I.wait(3)
+      I.fillField(objects.fields.DOB,DOB)
       customSteps().selectInDropdown(objects.fields.Gender,Gender)
       I.fillField(objects.fields.Email,Email)
       I.fillField(objects.fields.Street,Street)
       I.fillField(objects.fields.City,City)
       I.fillField(objects.fields.State,State)
       I.fillField(objects.fields.Zipcode,Zipcode)
-      I.forceClick(objects.fields.Owner_yes) 
-
+      I.forceClick(objects.fields.Owner_yes)
+      
     },
 
     async ErrorValidation(){
